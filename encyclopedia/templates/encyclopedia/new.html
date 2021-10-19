@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Додати сторінку</h1>
+    {% if  error1 %}
+        Помилка! Така сторінка вже <a href="{% url 'encyclopedia:index  ' %}">існує</a>
+    {% endif %}
+    <form action="{% url 'encyclopedia:new' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+{% endblock %}

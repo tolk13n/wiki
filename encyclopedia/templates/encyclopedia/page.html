@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ name }}
+{% endblock %}
+
+{% block body %}
+
+
+    {% if entries %}
+        {{ entries | safe }}
+
+    <p><a class="edit_button" href="{% url 'encyclopedia:edit'  name  %}">Редагувати</a>
+
+    {% else %}
+        Нажаль, такої статті не існує( Але ви маєте змогу створити її самостійно!
+    {% endif %}
+{% endblock %}

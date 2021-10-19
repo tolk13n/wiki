@@ -1,0 +1,18 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>Редагувати сторінку</h1>
+    {{ name }}
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content">
+            {{ entries }}
+        </textarea>
+        <p>
+        <input type="submit" >
+    </form>
+{% endblock %}

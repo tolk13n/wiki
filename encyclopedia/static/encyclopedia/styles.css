@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+#id_content {
+    display: block;
+    height: 400px;
+}
+
+.edit_button {
+    margin: 50px 0px ;
+    border: 1px solid #333; /* Рамка */
+    display: inline-block;
+    padding: 5px 15px; /* Поля */
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #000; /* Цвет текста */
+}
+.edit_button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3); /* Тень */
+    text-decoration: none; 
+    background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+   }
